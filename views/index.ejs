@@ -1,0 +1,22 @@
+
+<html>
+    <body>
+
+<% pessoas.forEach((pessoa) => { %>
+    
+        <form >
+    <p>
+        <%= pessoa.id %> 
+        <%= pessoa.nome %> 
+        <%= pessoa.sobrenome %>
+        <%= pessoa.idade %>   
+        <%= pessoa.altura %>
+
+        <button><a href="/pessoas/delete?id=<%= pessoa.id %>">Deletar</a></button>
+    </p>
+    </form>
+    <br/>
+<% }) %><br/>
+
+</body>
+</html>
